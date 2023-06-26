@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./grid.css">
+    </link>
+    <title>Chữ ký điện tử - Elgama</title>
+</head>
+
+<body>
+    <div id="App">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col c-6 bd-r">
+                    <div id="ps-chu-ky">
+                        <div class="row jc-center mt-16">
+                            <h1>PHÁT SINH CHỮ KÝ</h1>
+                        </div>
+                        <div class="row mt-32 van-ban-ky">
+                            <div class="col c-3">
+                                <label for="van-ban-ky">Văn bản ký: </label>
+                            </div>
+                            <div class="col c-6">
+                                <textarea name="van-ban-ky" id="van-ban-ky" cols="20" rows="5"></textarea>
+                            </div>
+                            <div class="col c-3">
+                                <label for="btn-ps-file" class="btn">File</label>
+                                <input type="file" id="btn-ps-file" style="display: none;">
+                            </div>
+                        </div>
+                        <div class="row mt-32 jc-center">
+                            <div class="col c-3">
+                                <button class="btn btn-ky">Ký</button>
+                            </div>
+                        </div>
+                        <div class="row mt-32 chu-ky">
+                            <div class="col c-3">
+                                <label for="chu-ky">Chữ ký: </label>
+                            </div>
+                            <div class="col c-6">
+                                <textarea name="chu-ky" id="chu-ky" cols="20" rows="5"></textarea>
+                            </div>
+                            <div class="col c-3">
+                                <div class="row">
+                                    <div class="col c-12">
+                                        <button class="btn btn-chuyen">Chuyển</button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col c-12">
+                                        <button class="btn btn-luu" style="margin-top: 16px;">Lưu</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col c-6">
+                    <div id="giai-ma">
+                        <div class="row jc-center">
+                            <h1>KIỂM TRA CHỮ KÝ</h1>
+                        </div>
+                        <div class="row mt-32">
+                            <div class="col c-3">
+                                <label for="ck-van-ban-ky">Văn bản ký: </label>
+                            </div>
+                            <div class="col c-6">
+                                <textarea name="ck-van-ban-ky" id="ck-van-ban-ky" cols="20" rows="5"></textarea>
+                            </div>
+                            <div class="col c-3">
+                                <label for="btn-ck-file-van-ban" class="btn">File văn bản</label>
+                                <input type="file" id="btn-ck-file-van-ban" style="display: none;">
+                            </div>
+                        </div>
+                        <div class="row mt-32">
+                            <div class="col c-3">
+                                <label for="gn-chu-ky">Chữ ký</label>
+                            </div>
+                            <div class="col c-6">
+                                <textarea name="ck-chu-ky" id="ck-chu-ky" cols="20" rows="5"></textarea>
+                            </div>
+                            <div class="col c-3">
+                                <label for="btn-ck-file-chu-ky" class="btn">File chữ ký</label>
+                                <input type="file" id="btn-ck-file-chu-ky" style="display: none;">
+                            </div>
+                        </div>
+                        <div class="row mt-32 jc-center">
+                            <div class="col c-3">
+                                <button class="btn btn-check-ky">Kiểm tra chữ ký</button>
+                            </div>
+                        </div>
+                        <div class="row mt-32">
+                            <div class="col c-3">
+                                <label for="thong-bao">Thông báo: </label>
+                            </div>
+                            <div class="col c-6">
+                                <textarea name="thong-bao" id="thong-bao" cols="20" rows="5"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="dist/bundle.js"></script>
+</body>
+
+</html>
